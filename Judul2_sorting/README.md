@@ -15,7 +15,7 @@ Pada baris 7 merupakan Jika elemen di kiri lebih pedas, pindahkan elemen tersebu
 Pada baris 8 yang dimana Pindah ke elemen berikutnya di sisi kiri untuk terus dibandingkan.
 Pada baris 9 yang dimana jika Setelah menemukan posisi yang tepat (di mana elemen di kiri sudah tidak lebih besar lagi), selipkan pesanan tadi ke posisi tersebut.
 <img width="932" height="221" alt="image" src="https://github.com/user-attachments/assets/52174d1f-8116-4b9c-8732-b5da34485e35" />
-Pada baris 11 Pada bagian ini meruapakan yang mengatur kapan meminta input, kapan menyuruh algoritma bekerja, dan bagaimana menampilkan hasil akhirnya ke layar.
+Pada baris 11 Pada bagian ini merupakan yang mengatur kapan meminta input, kapan menyuruh algoritma bekerja, dan bagaimana menampilkan hasil akhirnya ke layar.
 Pada baris 12 dan 13 Menampilkan judul program agar pengguna tahu tujuan aplikasi ini.
 Pada baris 15 dan 17 untuk Menjaga agar program tidak error jika pengguna salah memasukkan huruf saat diminta angka.
 Pada baris 16 untuk Meminta input jumlah total pesanan yang masuk ke dapur.
