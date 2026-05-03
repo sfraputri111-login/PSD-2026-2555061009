@@ -28,10 +28,10 @@ def main():
             except ValueError:
                 print("Masukkan angka level yang valid!")
 
-    print(f"\n[INFO] Pesanan masuk (berdasarkan waktu): {antrean}")
+    print(f"\n Pesanan masuk (berdasarkan waktu): {antrean}")
     urutkan_antrean_dapur(antrean)
     
-    print("REKOMENDASI URUTAN MASAK UNTUK KOKI:")
+    print("Rekomendasi urutan masak untuk koki:")
     for idx, level in enumerate(antrean):
         print(f"{idx + 1}. Masak Mie Level: {level}")
     print("Catatan: Urutan ini meminimalkan kontaminasi rasa cabai di wajan.")
