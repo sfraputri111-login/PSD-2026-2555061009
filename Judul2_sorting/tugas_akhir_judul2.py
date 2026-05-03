@@ -31,11 +31,9 @@ def main():
     print(f"\n[INFO] Pesanan masuk (berdasarkan waktu): {antrean}")
     urutkan_antrean_dapur(antrean)
     
-    print("-" * 40)
     print("REKOMENDASI URUTAN MASAK UNTUK KOKI:")
     for idx, level in enumerate(antrean):
         print(f"{idx + 1}. Masak Mie Level: {level}")
-    print("-" * 40)
     print("Catatan: Urutan ini meminimalkan kontaminasi rasa cabai di wajan.")
 
 if __name__ == "__main__":
