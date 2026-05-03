@@ -1,5 +1,5 @@
-def insertion_sort_level_pedas(antrean_level, total_pesanan):
-    for i in range(1, total_pesanan):
+def urutkan_antrean_dapur(antrean_level):
+    for i in range(1, len(antrean_level)):
         level_saat_ini = antrean_level[i]
         j = i - 1
         
@@ -9,26 +9,34 @@ def insertion_sort_level_pedas(antrean_level, total_pesanan):
         antrean_level[j + 1] = level_saat_ini
 
 def main():
-    print("=== Sistem  pengurutan Berdasarkan Level Pedas ===")
+    print("=== SISTEM MANAJEMEN DAPUR: MIE PEDAS ===")
+    print("Membantu Koki memasak berdasarkan urutan level (0 -> Terpedas)\n")
+    
     try:
-        n = int(input("Masukkan jumlah pesanan masuk: "))
+        n = int(input("Masukkan jumlah total pesanan saat ini: "))
     except ValueError:
-        print("Input tidak valid! Harap masukkan angka.")
+        print("Input salah! Masukkan jumlah dalam angka.")
         return
 
     antrean = []
-    print(f"\nMasukkan level pedas untuk {n} pesanan (contoh: 0, 1, 5):")
     for i in range(n):
         while True:
             try:
-                level = int(input(f"Pesanan ke-{i+1}: "))
+                level = int(input(f"Level pedas pesanan ke-{i+1}: "))
                 antrean.append(level)
                 break
             except ValueError:
-                print("Input tidak valid, masukkan angka level pedas!")
+                print("Masukkan angka level yang valid!")
 
-    print(f"Antrean masuk berdasarkan level pedas : {antrean}")
-    insertion_sort_level_pedas(antrean, n)
+    print(f"\n[INFO] Pesanan masuk (berdasarkan waktu): {antrean}")
+    urutkan_antrean_dapur(antrean)
+    
+    print("-" * 40)
+    print("REKOMENDASI URUTAN MASAK UNTUK KOKI:")
+    for idx, level in enumerate(antrean):
+        print(f"{idx + 1}. Masak Mie Level: {level}")
+    print("-" * 40)
+    print("Catatan: Urutan ini meminimalkan kontaminasi rasa cabai di wajan.")
 
 if __name__ == "__main__":
     main()
