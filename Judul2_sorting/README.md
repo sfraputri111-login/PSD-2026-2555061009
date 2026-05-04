@@ -47,4 +47,4 @@ Pada codingan baris 16 yang meminta inputkan jumlah total pesanan saat ini maka 
 Pada codingan baris 31 dan 33 yang dimana akan muncul output inputan yang si user telah masukan tadi dan menampilkan nya ke layar atas inputan tersebut. Pada output yang terakhir yang dimana setelah inputan ditampilkan ke layar maka akan muncul catatan terkait fungsi dari program ini.
 
 Link Video Presentasi 
-https://youtu.be/xfTUJ9a7Mx0?si=ZmuR_OPJl6NYc0lH
+https://youtu.be/L3jUpt6sZao?si=ezEljLc6NizDAYkF
