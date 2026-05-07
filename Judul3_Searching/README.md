@@ -63,3 +63,4 @@ Program ini meminta input angka dari User. pengguna memasukkan sebuah angka 5, y
 karena algoritma pencarian berhasil menemukan angka 5 di dalam daftar dan Jika angka tidak ada dalam daftar, pesan yang muncul adalah "Data tidak ditemukan", setelah data ditemukan Program menampilkan tiga informasi utama hasil dari proses unpacking data pada indeks yang ditemukan yaitu Nama peserta, Nomor Kursi, Posisi Area.
 
 Link Presentasi
+https://youtu.be/DEcxroPg_P8?si=f8AgIiebHZE9dqhi
