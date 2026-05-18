@@ -87,7 +87,7 @@ def main():
             if queue.is_empty():
                 queue.dequeue() 
             else:
-                print(">>> PANGGILAN KEPADA NASAHAB: <<<")
+                print(" PANGGILAN KEPADA NASAHAB: ")
                 queue.dequeue()
                 print("Silakan menuju ke Teller 1.")
                 
