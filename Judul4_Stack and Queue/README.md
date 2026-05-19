@@ -121,3 +121,4 @@ output dari source code
 setelah program dijalankan akan muncul pilihan dari nomor 1-5, ketika milih nomor 1 maka pengguna akan disuruh untuk memasukan nomor nasabah dan jika sudah akan muncul pesan nomor nasabah telah berhasil dan menggunakan prinsip enqueue. Di sini penggun memasukan nomor nasabah dan memilih nomor 1 sebanyak 3 kali. Kemudian pengguna memilih nomor 2 yaitu memanggil nasabah ke teller 1, Pengguna memilih nomor 3 yaitu untuk melihat antrian dengan menggunakan peek dan telah muncul antrean depan nya adalah B-002 dan 6. Pengguna memilih nomor 4 yaitu untuk mencetak seluruh nomor antrean yang ada pada saat ini dan akan muncul output secara depan ke belakang. Kemudian terakhir pengguna memasukan nomor 5 untuk keluar dari program dan program pun telah selesai. 
 
 Link Presentasi 
+https://youtu.be/aeBGgi7bwsQ?feature=shared
