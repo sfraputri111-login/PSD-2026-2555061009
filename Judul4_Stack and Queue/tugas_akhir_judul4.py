@@ -3,15 +3,13 @@ class Node:
         self.data = data
         self.next = None
 
-
 class QueueLinkedList:
     def __init__(self):
         self.front_ptr = None
         self.rear_ptr = None
-
+        
     def is_empty(self):
         return self.front_ptr is None
-
     def enqueue(self, x):
         new_node = Node(x)
         if self.is_empty():
@@ -55,15 +53,14 @@ def main():
     pilih = 0
     
     while pilih != 5:
-        print("\n====================================")
+        print("====================================")
         print("     SISTEM ANTREAN BANK MANDIRI    ")
         print("====================================")
         print("1. Ambil Nomor Antrean (Enqueue)")
         print("2. Panggil Nasabah ke Teller (Dequeue)")
         print("3. Lihat Antrean Terdepan (Peek)")
         print("4. Cetak Seluruh Daftar Antrean (Display)")
-        print("5. Tutup Bank & Keluar Program")
-        print("------------------------------------")
+        print("5. Keluar Program")
         
         try:
             pilih = int(input("Pilih Menu (1-5): "))
@@ -72,36 +69,29 @@ def main():
             continue
             
         if pilih == 1:
-            nama_nasabah = input("Masukkan Nama Nasabah: ")
+            nama_nasabah = input("Masukkan nomor Nasabah: ")
             if nama_nasabah.strip() == "":
-                print("Nama tidak boleh kosong!")
+                print("nomor tidak boleh kosong!")
                 continue
-                
+
             counter_antrean += 1
             data_sistem = f"[B-{counter_antrean:03d} | {nama_nasabah}]"
-            print("\n[PROSES ENQUEUE]")
             queue.enqueue(data_sistem)
             
         elif pilih == 2:
-            print("\n[PROSES DEQUEUE]")
             if queue.is_empty():
                 queue.dequeue() 
             else:
-                print(" PANGGILAN KEPADA NASAHAB: ")
+                print(" PANGGILAN KEPADA NASABAH: ")
                 queue.dequeue()
                 print("Silakan menuju ke Teller 1.")
                 
         elif pilih == 3:
-            print("\n[PROSES PEEK]")
             queue.peek()  
         elif pilih == 4:
-            print("\n[PROSES DISPLAY]")
             queue.display()
         elif pilih == 5:
-            print("\n[SISTEM DIKOSONGKAN SEBELUM KELUAR]")
-            while not queue.is_empty():
-                queue.dequeue()
-            print("Sistem dimatikan. Terima kasih.")
+            print("\n Sistem selesai dan terima kasih telah menggunakan layanan kami!")
         else:
             print("Pilihan tidak valid!")
 
