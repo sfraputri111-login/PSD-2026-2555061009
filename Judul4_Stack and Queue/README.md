@@ -110,6 +110,7 @@ Pada baris 95 dan 96 Jika pengguna memasukkan angka bulat tetapi di luar jangkau
 Pada baris 98 dan 99 Memeriksa apakah sedang dijalankan secara langsung oleh pengguna di terminal dan menjadi pemicu utama roda program berputar dari awal hingga akhir.
 
 output dari source code
+
 <img width="572" height="260" alt="image" src="https://github.com/user-attachments/assets/92ce5de1-9e48-42e1-a8f6-048c2ee2f593" />
 <img width="576" height="262" alt="image" src="https://github.com/user-attachments/assets/7b58a49a-ab0a-4331-94bf-4ca076d8338a" />
 <img width="558" height="262" alt="image" src="https://github.com/user-attachments/assets/d5e92f7c-f1b4-47ce-b9a4-83f71b87300e" />
