@@ -25,7 +25,7 @@ Pada baris 6 Mendefinisikan kelas untuk mengatur antrean.
 
 Pada baris 7 untuk membuat antrean baru yang masih kosong.
 
-Pada baris 8 dan 9 front_ptr (menunjuk elemen paling depan/yang akan keluar) dan rear_ptr (menunjuk elemen paling belakang/yang baru masuk). Di awal, keduanya bernilai None.
+Pada baris 8 dan 9 front_ptr (menunjuk elemen paling depan yang akan keluar) dan rear_ptr (menunjuk elemen paling belakang yang baru masuk). Di awal, keduanya bernilai None.
 
 Pada baris 11 dan 12  untuk memeriksa apakah antrean kosong. Mengembalikan nilai True jika front_ptr bernilai None.
 
@@ -43,9 +43,9 @@ Pada baris 21 mempilkan jika enqueue berhasil
 
 Pada baris 23 Mengurangi atau Memanggil Antrean
 
-Pada baris 24, 25, 34, 35, 36, 26, 40, 41, 42 Jika  bernilai True, program langsung mencetak Queue kosong dan berhenti (return).
+Pada baris 24, 25, 34, 35, 36, 26, 40, 41, 42 Jika  bernilai True, program langsung mencetak Queue kosong dan berhenti.
 
-Pada baris 27 Jika ada nasabah, program mencatat data nasabah terdepan ke variabel sementara (temp).
+Pada baris 27 Jika ada nasabah, program mencatat data nasabah terdepan ke variabel sementara.
 
 Pada baris 28 jika program berhasil mencatat data di temp maka akan muncul temp pada data berhasil.
 
@@ -69,13 +69,13 @@ Pada baris 46 Program mengambil data nasabah yang sedang berdiri di posisi curre
 
 Pada baris 47 instruksi untuk menggeser posisi agar maju satu langkah ke node di belakangnya.
 
-Pada baris 48 akan dieksekusi setelah perulangan selesai total (ketika current sudah mencapai None).
+Pada baris 48 akan dieksekusi setelah perulangan selesai total.
 
 Pada baris 50 Mendeklarasikan sebuah fungsi 
 
 Pada baris 51 Melakukan pembuatan objek dari kelas yang sudah didefinisikan sebelumnya, kemudian menyimpannya ke dalam variabel lokal bernama queue.
 
-Pada baris 52 Membuat sebuah variabel dengan tipe data bilangan bulat (integer) dan mengisi nilai awalnya dengan angka 0.
+Pada baris 52 Membuat sebuah variabel dengan tipe data bilangan bulat dan mengisi nilai awalnya dengan angka 0.
 
 Pada baris 53 menyimpan angka menu yang diketik oleh pengguna dan Karena 0 tidak sama dengan 5, maka program diizinkan untuk masuk dan mulai menampilkan pilihan menu bank kepada pengguna.
 
@@ -105,7 +105,7 @@ Pada baris 91 dan 92 Jika pilih bernilai 4, program memanggil metode queue.displ
 
 Pada baris 93 dan 94 ika pilih bernilai 5, program mencetak ucapan terima kasih. Karena nilai pilih sekarang berubah menjadi 5, kondisi pada perulangan utama akan bernilai salah sehingga perulangan berhenti otomatis.
 
-Pada baris 95 dan 96 Jika pengguna memasukkan angka bulat tetapi di luar jangkauan 1–5 (misalnya mengetik angka 9) semua kondisi if dan elif di atas akan bernilai salah, sehingga baris ini dijalankan untuk memberi peringatan.
+Pada baris 95 dan 96 Jika pengguna memasukkan angka bulat tetapi selain 1–5 semua kondisi if dan elif di atas akan bernilai salah, sehingga baris ini dijalankan untuk memberi peringatan.
 
 Pada baris 98 dan 99 Memeriksa apakah sedang dijalankan secara langsung oleh pengguna di terminal dan menjadi pemicu utama roda program berputar dari awal hingga akhir.
 
