@@ -91,7 +91,7 @@ Pada baris 73, 74 dan 75 strip() digunakan untuk menghapus spasi kosong di awal 
 
 Pada baris 77 Jika input valid, nilai variabel ditambah 1 sebagai tanda ada nomor urut baru yang tercipta.
 
-Pada baris 78 Membuat format teks tiket antrean bank resmi. Kode :03d berarti angka di dalamnya wajib ditulis dalam 3 digit.
+Pada baris 78 Membuat format teks tiket antrean bank resmi. Kode 03d berarti angka di dalamnya wajib ditulis dalam 3 digit.
 
 Pada baris 79 Memanggil metode enqueue pada objek queue untuk membungkus teks data_sistem tadi ke dalam sebuah Node baru dan ke barisan paling belakang antrean.
 
