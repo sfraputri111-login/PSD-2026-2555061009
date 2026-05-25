@@ -69,7 +69,7 @@ def main():
     bst = SistemJadwalBST()
     pilih = 0
     while pilih != 7:
-        print("\n=== SISTEM JADWAL HARIAN (BST) ===")
+        print("\n=== SISTEM JADWAL HARIAN  ===")
         print("1. Tambah Jadwal")
         print("2. Cari Jadwal")
         print("3. Lihat Agenda Hari Ini (Urut Waktu)")
