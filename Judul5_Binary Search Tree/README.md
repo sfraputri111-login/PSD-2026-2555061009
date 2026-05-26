@@ -17,3 +17,12 @@ Output
 <img width="696" height="549" alt="image" src="https://github.com/user-attachments/assets/90878501-3b4e-471a-92b6-e63b1da8f6f6" />
 <img width="698" height="722" alt="image" src="https://github.com/user-attachments/assets/2af97702-f934-4ac5-884f-c4a83349fcb3" />
 <img width="498" height="208" alt="image" src="https://github.com/user-attachments/assets/e5f711dd-ec2c-437b-8233-fe75050a5d44" />
+user memilih nomor 1 dan user memasukan jam 1 dan menit 32 dengan nama kegiatan Belajar. Program sukses mengubah input tersebut menjadi format waktu 01:32 dan menyimpannya ke dalam sistem.
+User memilih nomor 2 dan User mencoba mencari tahu ada agenda apa di jam 1 lewat 32 menit. Karena tadi sudah disimpan, program langsung berhasil menemukan dan menampilkan yang telah disimpan tadi.
+User memilih nomor 3 dan program menampilkan seluruh jadwal yang ada secara berurutan karena user baru input satu jadwal yang muncul dilayar cuman satu jadwal tersebut.
+User memilih nomor 4 dan Fitur ini otomatis mencari kegiatan paling awal dan paling akhir.
+User memilih nomor 5 dan Program menghitung ada berapa banyak aktivitas yang sudah dicatat.
+User memilih nomor 6 dan sistem menutup program dengan menampilkan salam penutupnya.
+
+
+Link Presentasi
