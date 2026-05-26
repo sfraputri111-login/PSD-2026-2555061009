@@ -9,7 +9,8 @@ Source Code
 <img width="1331" height="903" alt="image" src="https://github.com/user-attachments/assets/1af9dd70-92f0-4019-84d2-46efec0df4dc" />
 <img width="1328" height="857" alt="image" src="https://github.com/user-attachments/assets/1e39dd80-8e10-432c-90f2-236b0986fd1a" />
 <img width="1322" height="873" alt="image" src="https://github.com/user-attachments/assets/c6707c8d-fb3e-43fd-8635-83f33d622063" />
-<img width="1316" height="727" alt="image" src="https://github.com/user-attachments/assets/9577602b-e6c4-416b-ac0f-2b5edb595a35" />
+<img width="1319" height="780" alt="image" src="https://github.com/user-attachments/assets/cd8e5819-7139-4129-9f84-3cad7c963049" />
+
 Baris 1: Mendeklarasikan pembuatan kelas bernama Node.
 Baris 2: Membuat otomatis jalan saat sebuah node baru dibuat. Fungsi ini menerima input key (waktu angka) dan kegiatan.
 Baris 3: Menyimpan input angka waktu ke dalam variabel internal self.key.
