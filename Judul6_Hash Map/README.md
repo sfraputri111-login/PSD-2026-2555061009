@@ -49,6 +49,12 @@ Output:
 
 <img width="812" height="701" alt="image" src="https://github.com/user-attachments/assets/fe3d26a8-bed0-4628-9f27-f850c275071d" />
 
+pada Program menampilkan menu utama (Lihat Denah, Pesan/Update, Batalkan, Keluar), user memilih nomor 1 yaitu Pengguna untuk Lihat Denah Kursi dan Sistem menampilkan daftar baris. Karena belum ada data yang dimasukkan, semua baris menunjukkan status kosong, yang menandakan tabel hash telah berhasil diinisialisasi dengan nilai None di setiap indeks.
 
+user memilih nomor 2 yaitu Pesan/Update Kursi dan Pengguna memasukkan Nomor kursi: 2 dan Nama pemesan: Siska. Sistem menjalankan fungsi hash_function yang menghasilkan indeks 2. Kemudian, fungsi insert membuat Node baru berisi data dan menempatkannya di self.table nomor 2. User Pengguna kembali memilih untuk melihat denah dan muncul data Kursi yang yang telah terisi dan NULL menandakan akhir dari rantai yang tidak ada data lain di baris ini. 
+
+User memilih nomor 3 Batalkan Pesanan yaitu Pengguna memasukkan Nomor kursi: 2. Sistem menjalankan fungsi remove_key nomor 2. Sistem mencari di indeks 2, menemukan node dengan kunci 2, lalu memutuskan hubungan node tersebut dari linked list dan Pesanan kursi 2 telah dibatalkan muncul, yang mengonfirmasi bahwa data Siska telah berhasil dihapus dari memori tabel hash.
+
+user memilih nomor 4 yaitu memilih Keluar dan Program menampilkan Terima kasih! dan mengakhiri loop while, sehingga program berhenti berjalan.
 
 Link Video 
