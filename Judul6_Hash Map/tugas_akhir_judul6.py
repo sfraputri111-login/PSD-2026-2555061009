@@ -4,7 +4,7 @@ class Node:
         self.value = value
         self.next = None
 
-class HashMapSeparateChaining:
+class SeparateChaining:
     def __init__(self, size=10):
         self.SIZE = size
         self.table = [None] * self.SIZE
@@ -49,59 +49,61 @@ class HashMapSeparateChaining:
         return False
 
     def display(self):
-        print("\n KURSI BIOSKOP ")
+        print("\n RESERVASI KURSI BIOSKOP ")
         for i in range(self.SIZE):
-            print(f"Baris/Indeks {i}: ", end="")
+            print(f"Baris {i:2}: ", end="")
             current = self.table[i]
             if current is None:
                 print("KOSONG")
-            while current is not None:
-                print(f"[Kursi: {current.key}, Nama: {current.value}] -> ", end="")
-                current = current.next
-            print("NULL")
-            
+            else:
+                while current is not None:
+                    print(f"[Kursi:{current.key}, Nama:{current.value}] -> ", end="")
+                    current = current.next
+                print("NULL")
+
 def main():
-    bioskop = HashMapSeparateChaining(10)
-
-    bioskop.insert(1, "Ibnu")
-    bioskop.insert(11, "Maryam")   
-    bioskop.insert(21, "Andi")   
-    bioskop.insert(2, "Siska")
-
+    bioskop = SeparateChaining(10)
+    
     pilih = 0
-    while pilih != 2:
-        print("\n MENU RESERVASI BIOSKOP ")
-        print("1. Cek & Kelola Reservasi")
-        print("2. Keluar")
+    while pilih != 4:
+        print("\n RESERVASI BIOSKOP ")
+        print("1. Lihat Denah Kursi")
+        print("2. Pesan/Update Kursi")
+        print("3. Batalkan Pesanan")
+        print("4. Keluar")
         
         try:
-            pilih = int(input("Masukkan pilihan Anda: "))
+            pilih = int(input("Pilih menu: "))
         except ValueError:
             print("Input tidak valid!")
             continue
 
         if pilih == 1:
             bioskop.display()
-            try:
-                nomor_kursi = int(input("\nMasukkan nomor kursi yang ingin dikelola: "))
-                hasil = bioskop.search(nomor_kursi)
-                
-                if hasil:
-                    print(f"\n[INFO] Kursi {nomor_kursi} dipesan oleh: {hasil.value}")
-                    konfirmasi = input("Apakah ingin membatalkan pesanan ini? (ya/tidak): ")
-                    if konfirmasi.lower() == 'ya':
-                        bioskop.remove_key(nomor_kursi)
-                        print(f"[ACTION] Pesanan {nomor_kursi} dibatalkan.")
-                        bioskop.display() 
-                else:
-                    print(f"\n[INFO] Kursi {nomor_kursi} kosong.")
-            except ValueError:
-                print("Input harus angka!")
-                
+            
         elif pilih == 2:
-            print("Program selesai.")
+            try:
+                nomor = int(input("Masukkan nomor kursi: "))
+                nama = input("Masukkan nama pemesan: ")
+                bioskop.insert(nomor, nama)
+                print(f"Kursi {nomor} telah dipesan atas nama {nama}.")
+            except ValueError:
+                print("Nomor kursi harus angka!")
+                
+        elif pilih == 3:
+            try:
+                nomor = int(input("Masukkan nomor kursi yang ingin dibatalkan: "))
+                if bioskop.remove_key(nomor):
+                    print(f" Pesanan kursi {nomor} telah dibatalkan.")
+                else:
+                    print(f"Kursi {nomor} tidak ditemukan.")
+            except ValueError:
+                print("Nomor kursi harus angka!")
+                
+        elif pilih == 4:
+            print("Terima kasih!")
         else:
-            print("Pilihan tidak valid!")
+            print("Pilihan tidak valid.")
 
 if __name__ == "__main__":
     main()
