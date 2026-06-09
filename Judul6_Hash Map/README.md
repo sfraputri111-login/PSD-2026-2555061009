@@ -58,3 +58,5 @@ User memilih nomor 3 Batalkan Pesanan yaitu Pengguna memasukkan Nomor kursi: 2. 
 user memilih nomor 4 yaitu memilih Keluar dan Program menampilkan Terima kasih! dan mengakhiri loop while, sehingga program berhenti berjalan.
 
 Link Video 
+
+https://youtu.be/mMbQuqXvZ54?si=bDWPHFZ-Q6p6cVxs
