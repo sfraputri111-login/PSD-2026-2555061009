@@ -11,8 +11,35 @@ Source Code:
 
 <img width="1053" height="851" alt="image" src="https://github.com/user-attachments/assets/11cf62f8-5d9a-49d4-8248-ee2464063a2e" />
 
+Baris 1–5: Mendefinisikan unit terkecil data. Setiap Node menyimpan key (nomor kursi), value (nama penumpang), dan next (penunjuk ke node berikutnya jika terjadi collision).
 
+Baris 7–10: Inisialisasi hash table dengan ukuran (SIZE=10). self.table adalah list yang berisi None, yang nantinya akan menyimpan node pertama dari linked list.
 
+Baris 12–13: Menentukan posisi indeks dalam tabel menggunakan sisa bagi. Operasi ini memastikan nomor kursi berapa pun akan selalu masuk ke dalam rentang indeks 0–9.
+
+Baris 15–25: Logika utama untuk memesan kursi dan Mencari indeks berdasarkan kunci.
+
+Baris 18-22: memeriksa apakah kursi sudah dipesan. Jika sudah, nama penumpang diperbarui. Jika belum, new_node dibuat dan diletakkan di depan list pada indeks tersebut.
+
+Baris 27–34: Mencari data penumpang berdasarkan nomor kursi. Program masuk ke indeks hasil hash, lalu menyusuri linked list (while current is not None) sampai menemukan kunci yang cocok.
+
+Baris 36–49: Menghapus reservasi dan Program mencari node target. prev digunakan untuk menyambungkan kembali node sebelum dan sesudah node yang dihapus, sehingga rantai linked list tidak terputus.
+
+Baris 51–62: Fungsi untuk mencetak sebuah reservasi bioskop. Program melakukan looping ke setiap indeks. Jika indeks berisi linked list, ia akan mencetak semua kursi yang ada di rantai tersebut hingga mencapai NULL.
+
+Baris 64–74: Inisialisasi objek bioskop dan pembuatan loop menu interaktif yang akan terus berjalan sampai pengguna memilih opsi 4 (Keluar).
+
+Baris 75–79: Penanganan kesalahan jika pengguna memasukkan input selain angka untuk menu.
+
+Baris 81–82: Jika pilih 1, fungsi display() dipanggil untuk memperlihatkan kondisi kursi saat ini.
+
+Baris 84–91: Jika pilih 2, program meminta input nomor kursi dan nama, lalu menjalankan insert untuk menyimpan data.
+
+Baris 93–101: Jika pilih 3, program meminta nomor kursi dan menjalankan remove_key. Jika kursi ada, reservasi dibatalkan.
+
+Baris 103–106: Jika pilih 4, program berhenti. Jika input tidak sesuai angka menu, pesan kesalahan ditampilkan.
+
+Baris 108–109: Baris eksekusi utama yang memanggil fungsi main() saat skrip dijalankan.
 
 
 
