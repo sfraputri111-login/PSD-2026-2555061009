@@ -1,4 +1,4 @@
-MENU RESERVASI BIOSKOP 
+RESERVASI BIOSKOP 
 --------------------------------------------
 Program ini berfungsi sebagai manajemen reservasi biskop untuk mengelola data pemesanan kursi. Melalui sistem yang telah dibuat user dapat melakukan pengecekan status kursi secara cepat, melihat daftar pemesanan yang terdaftar di baris yang sudah terisi serta melakukan pembatalan atau melakukan pemesanan dengan cepat. Sistem ini sangat berguna untuk menangani alur data yang dinamis seperti kursi sering kali dipesan dan dibatalakan dalam waktu yang bersamaan. 
 
@@ -17,6 +17,7 @@ Source Code:
 
 
 Output:
+
 <img width="812" height="747" alt="image" src="https://github.com/user-attachments/assets/931636a2-b1ca-4e8b-9cae-1c46a51961cf" />
 
 <img width="812" height="701" alt="image" src="https://github.com/user-attachments/assets/fe3d26a8-bed0-4628-9f27-f850c275071d" />
